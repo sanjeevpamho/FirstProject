@@ -1,0 +1,123 @@
+1.>https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/
+2.>https://www.geeksforgeeks.org/deletion-binary-tree/
+3.>https://www.geeksforgeeks.org/foldable-binary-trees/
+4.>https://www.geeksforgeeks.org/symmetric-tree-tree-which-is-mirror-image-of-itself/
+5.https://www.geeksforgeeks.org/expression-tree/  (pending)
+
+Traversals:
+4.>https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/     stack
+5.>https://www.geeksforgeeks.org/iterative-preorder-traversal/                 stack
+6.>https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/    stack
+7.>https://www.geeksforgeeks.org/level-order-tree-traversal/ 
+   
+   solution 1.>We can use height of tree for level-order-traversal =>for (i = 1; i <= h; i++)
+   solution 2.>Using Queue
+   
+8.>https://www.geeksforgeeks.org/reverse-level-order-traversal/
+
+   solution 1.>We can use height of tree for level-order-traversal =>for (i = h; i >= 1; i--)
+   solution 2.>Using Queue and store elements in stack
+9.>https://www.geeksforgeeks.org/print-left-view-binary-tree/
+10.>https://www.geeksforgeeks.org/right-view-binary-tree-using-queue/
+
+need to use SpecialNode with hd=> horizontal distance
+
+11.>verical order explaination:https://www.youtube.com/watch?v=PQKkr036wRc
+    file:///C:/Sanjeev/Sanjeev_Amadeus/New%20folder/sortings/src/main/java/code/bind/BinaryTree/11_VerticalOrderTraversal.java
+12.>vertical sum  C:\Sanjeev\Sanjeev_Amadeus\New folder\sortings\src\main\java\code\bind\BinaryTree
+13.>top view  https://www.youtube.com/watch?v=c3SAvcjWb1E  
+    (Level order traversal + vertical order traversal)
+	easy :
+	file:///C:/Sanjeev/Sanjeev_Amadeus/New%20folder/sortings/src/main/java/code/bind/BinaryTree/13_TopView.java
+	https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+14.>Bottom view  https://www.youtube.com/watch?v=V7alrvgS5AI
+    file:///C:/Sanjeev/Sanjeev_Amadeus/New%20folder/sortings/src/main/java/code/bind/BinaryTree/14_BottomView.java
+    https://www.geeksforgeeks.org/bottom-view-binary-tree/
+15.>print leaf nodes of binary tree : 
+    recursive solution: https://www.geeksforgeeks.org/print-leaf-nodes-left-right-binary-tree/
+	iterative solution: C:\Sanjeev\Sanjeev_Amadeus\New folder\sortings\src\main\java\code\bind\BinaryTree\15_LeafNodesInBinaryTree.java
+
+Imp
+16.>Boundary Traversal : https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+
+logic:
+void printBoundary(Node node)
+    {
+        if (node == null)
+            return;
+ 
+        System.out.print(node.data + " ");
+ 
+        // Print the left boundary in top-down manner.
+        printBoundaryLeft(node.left);
+ 
+        // Print all leaf nodes
+        printLeaves(node.left);
+        printLeaves(node.right);
+ 
+        // Print the right boundary in bottom-up manner
+        printBoundaryRight(node.right);
+    }
+
+17.>daigonal traversal : https://www.youtube.com/watch?v=e9ZGxH1y_PE&t=1333s
+    d=daigonal distance.
+	rule to mark 'd':
+	1.>d=d+1 only for left child
+	2.>for every right child d='d' of right
+	
+	https://www.geeksforgeeks.org/diagonal-traversal-of-binary-tree/
+   
+18.>Zigzag : https://www.geeksforgeeks.org/zigzag-tree-traversal/
+
+19.>
+https://www.youtube.com/watch?v=ey7DYc9OANo&t=729s
+Daimeter : https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+Math.max(1+lHeight+rHeight, Math.max(ldiameter, rdiameter))
+
+20.>Maximum Path Sum in a Binary Tree
+https://www.youtube.com/watch?v=JBYs5J4skZE&t=2s
+https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
+
+For each node there can be four ways that the max path goes through the node: 
+
+Node only 
+Max path through Left Child + Node 
+Max path through Right Child + Node 
+Max path through Left Child + Node + Max path through Right Child
+
+21.>Maximum Path Sum in a Binary Tree such that no two elements are adjacent to each other
+https://www.geeksforgeeks.org/maximum-sum-nodes-binary-tree-no-two-adjacent/
+https://www.youtube.com/watch?v=DBxCv9NpPYM
+file:///C:/Sanjeev/Sanjeev_Amadeus/New%20folder/sortings/src/main/java/code/bind/BinaryTree/14_BottomView.java
+C:\Sanjeev\Sanjeev_Amadeus\myWorkspaces\myMavenWorkSpace\maven-example\src\main\java\code\bind\tree\FindSumOfNotAdjacentNodes_21.java
+
+22.>
+https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+
+==========================================================================================
+Traversals
+
+level order traversal , level order traversal in reverse
+left view, right view ,vertical order, vertical sum,
+zigzag,top ,bottom,boundary order traversal,daigonal traversal,daimeter
+maximum width of binary tree
+
+https://www.includehelp.com/icp/right-view-of-binary-tree.aspx#:~:text=Right%20view%20of%20a%20binary%20tree%20means%20the,every%20level%20traversed%2C%20print%20only%20the%20rightmost%20node.
+
+
+1.>Java 8 method to remove duplicate element from Array:
+Ans: 
+        ArrayList<Integer> numbersList = new ArrayList<>(Arrays.asList(1, 1, 2, 3, 3, 3, 4, 5, 6, 6, 6, 7, 8));
+        List<Integer> listWithoutDuplicates = numbersList.stream().distinct().collect(Collectors.toList()); 
+        System.out.println(listWithoutDuplicates);
+
+2.>Concurrency level in Concurrent hash map
+Ans: 16. Based on that it allows thread safe write operations
+
+3.>Use of @SpringBootApplication
+
+4.>@ControllerAdvice is an annotation provided by Spring allowing you to write global code that 
+                     can be applied to a wide range of controllers — varying from all controllers 
+					 to a chosen package or even a specific annotation. 
+5.>list = Collections.unmodifiableList(list);					 
+					 
