@@ -6,14 +6,14 @@ public class RearrangePositiveNegativeNumbers {
 	public static void main(String[] args) {
 
 		int arr[] = { -1, 2, -3, 4, 5, 6, -7, 8, 9 };
-		int pivot = 0;
+		// int pivot = 0;
 		int down = 0;
 		int up = arr.length - 1;
 		while (down <= up) {
-			while (down <= up && arr[down] < pivot) {
+			while (down <= up && arr[down] < 0) {
 				down++;
 			}
-			while (arr[up] > pivot) {
+			while (arr[up] > 0) {
 				up--;
 			}
 			if (down <= up) {

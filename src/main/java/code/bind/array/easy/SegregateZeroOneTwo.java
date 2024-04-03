@@ -10,7 +10,8 @@ public class SegregateZeroOneTwo {
 		System.out.println("Array after segregataion :");
 		System.out.println(Arrays.toString(arr));
 	}
-
+  //  DutchNationalFlag	
+  //  <0 ---- 0s ---- low-1> <low ---- 1s ---- mid-1> <mid ---- unsorted ---- high> <high+1 ---- 2s ---- n-1>
 	private static void segregateUsingDutchNationalFlag(int[] arr, int length) {
 		int low = 0, mid = 0;
 		int high = length - 1;

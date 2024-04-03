@@ -34,10 +34,10 @@ public class MergeSort {
 			}
 		}
 		while(i<=m) {
-			tmp[k]=arr[i]; i++;k++;
+			tmp[k++]=arr[i++];
 		}
 		while(j<=r) {
-			tmp[k]=arr[j]; j++;k++;
+			tmp[k++]=arr[j++];
 		}
 		for(int b=l;b<=r;b++) {
 			arr[b]=tmp[b];

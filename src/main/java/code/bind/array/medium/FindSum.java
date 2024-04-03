@@ -7,7 +7,7 @@ public class FindSum {
 		int a[] =  {-2, -3, 4, -1, -2, 1, 5, -3};
 	//	int a[]={-2, -3, -4, -1, -9, -10,- 5, -3};
 		int n=a.length;
-		System.out.println("size"+n);
+		System.out.println("size : "+n);
 		System.out.println("maximum contiguous sum is::"+maxSubArraySum(a,n));
 	}
 	//this method will work properly when all numbers are not negative

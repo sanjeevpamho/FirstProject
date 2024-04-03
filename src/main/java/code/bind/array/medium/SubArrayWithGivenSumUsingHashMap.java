@@ -41,9 +41,9 @@ public class SubArrayWithGivenSumUsingHashMap {
 	public static void main(String[] args) {
 		// int[] arr = { -1, 1, 1 }; int sum = 1;
 
-	//	 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 }; int sum = 23;
+		 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 }; int sum = 23;
 		 
-		 int arr[] = {12, 2, -2, -20, 10}; int sum = -12;
+	//	 int arr[] = {12, 2, -2, -20, 10}; int sum = -12;
 
 		int len = getLongestSubarray(arr, sum);
 		System.out.println("The length of the longest subarray is: " + len);
