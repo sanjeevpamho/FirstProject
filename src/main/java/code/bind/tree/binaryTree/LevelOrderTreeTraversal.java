@@ -11,7 +11,7 @@ public class LevelOrderTreeTraversal {
 		tree.root.left.left = new Node(4);
 		tree.root.left.right = new Node(5);
 
-		System.out.println("Level order traversal of" + "binary tree is ");
+		System.out.println("Level order traversal of " + "binary tree is ");
 		tree.printLevelOrder();
 	}
 

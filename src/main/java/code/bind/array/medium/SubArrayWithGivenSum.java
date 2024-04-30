@@ -3,6 +3,7 @@ package code.bind.array.medium;
 import java.util.HashMap;
 import java.util.Map;
 
+//better solution in SubArrayWithGivenSumUsingHashMap program
 public class SubArrayWithGivenSum {
 	
     int subArrayWithSum(int arr[], int n, int sum)

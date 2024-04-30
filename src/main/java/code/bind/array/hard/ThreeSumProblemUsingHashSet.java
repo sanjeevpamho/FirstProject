@@ -10,7 +10,8 @@ import java.util.Set;
 //https://www.youtube.com/watch?v=DhFh8Kw7ymk
 public class ThreeSumProblemUsingHashSet {
 	public static void main(String[] args) {
-		int[] arr = { -1, 0, 1, 2, -1, -4 };
+	//	int[] arr = { -1, 0, 1, 2, -1, -4 };
+		int[] arr = { -2, -2, -2, -1, -1, -1, 0, 0, 0, 2, 2, 2, 2 };
 		int n = arr.length;
 		int tripletSum = 0;
 		List<List<Integer>> ans = triplet(n, arr, tripletSum);

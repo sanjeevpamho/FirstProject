@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//https://www.youtube.com/watch?v=DhFh8Kw7ymk
+//https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
+//https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems
 public class ThreeSumProblem {
 	public static void main(String[] args) {
 		int[] arr = { -2, -2, -2, -1, -1, -1, 0, 0, 0, 2, 2, 2, 2 };
@@ -47,7 +50,6 @@ public class ThreeSumProblem {
 						k--;
 					}
 				}
-
 			}
 		}
 

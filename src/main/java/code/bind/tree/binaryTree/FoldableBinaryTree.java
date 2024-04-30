@@ -1,7 +1,5 @@
 package code.bind.tree.binaryTree;
 
-import javax.lang.model.type.MirroredTypeException;
-
 class Node {
 	int data;
 	Node left, right;
