@@ -25,7 +25,8 @@ public class PrimeFacors {
 
 	public static void main (String[] args) 
 	{ 
-		int n = 315; 
-		primeFactors(315); 
+	  //	int n = 315;
+		int n = 1260;
+		primeFactors(n); 
 	} 
 }

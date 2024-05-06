@@ -1,5 +1,6 @@
 package code.bind.tree.binaryTree;
 
+//https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
 public class DiameterOfBinaryTree {
 	Node root;
 

@@ -2,7 +2,7 @@ package code.bind;
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
-import javax.xml.bind.DatatypeConverter;
+//import javax.xml.bind.DatatypeConverter;
 
 /**
  * This example program shows how AES encryption and decryption can be done in Java.
@@ -80,6 +80,7 @@ public class AES {
      * @return 
      */
     private static String  bytesToHex(byte[] hash) {
-        return DatatypeConverter.printHexBinary(hash);
+     //   return DatatypeConverter.printHexBinary(hash);
+        return null;
     }
 }
