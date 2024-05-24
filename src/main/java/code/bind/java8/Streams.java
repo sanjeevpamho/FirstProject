@@ -2,6 +2,7 @@ package code.bind.java8;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,6 +21,7 @@ public class Streams {
 		List<Integer> l2 = list.stream().map(num -> num * 2).collect(Collectors.toList());
 		System.out.println("l2 : " + l2);
 		
+		//flatMap
 		List<Integer> P1 = Arrays.asList(1,2,3,4,5);
 		List<Integer> P2 = Arrays.asList(6,7,8,9,10);
 		List<Integer> P3 = Arrays.asList(11,12,13,14,15);
@@ -29,6 +31,14 @@ public class Streams {
 		List<Integer> l3 = allP.stream().flatMap(myList -> myList.stream().map(num -> num * 2)).collect(Collectors.toList());
 		System.out.println("l3 : " + l3);
 		
+		//print the elements of stream in reverse order 
+		List<Integer> listToPrint = Arrays.asList(2, 4, 6, 8, 10); 
+		listToPrint.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println); 
+		
+		//remove duplicated
+		List<Integer> listwithDup	= Arrays.asList(1,2,3,2,1,3,4,5);
+		listwithDup.stream().collect(Collectors.groupingBy(s->s))
+		.forEach((k,v)-> {if(v.size()==1) System.out.println(k+" "+v.size()) ;});
 		
 	}
 

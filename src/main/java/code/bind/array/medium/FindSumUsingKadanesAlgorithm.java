@@ -1,7 +1,7 @@
 package code.bind.array.medium;
 
 
-public class FindSum {
+public class FindSumUsingKadanesAlgorithm {
 	//Kadane's algorithm is to look for all positive contiguous segments of the array 	
 	public static void main(String[] args) {
 		int a[] =  {-2, -3, 4, -1, -2, 1, 5, -3};
