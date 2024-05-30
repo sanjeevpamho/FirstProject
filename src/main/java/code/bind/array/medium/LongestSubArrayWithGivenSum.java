@@ -5,7 +5,7 @@ import java.util.Map;
 
 //https://www.youtube.com/watch?v=frf7qxiN2qU&t=1595s
 //from 10 mins onwards
-public class SubArrayWithGivenSumUsingHashMap {
+public class LongestSubArrayWithGivenSum {
 	public static int getLongestSubarray(int[] arr, int sum) {
 		Map<Integer, Integer> preSumMap = new HashMap<>();
 		int currentSum = 0;
@@ -43,7 +43,7 @@ public class SubArrayWithGivenSumUsingHashMap {
 	public static void main(String[] args) {
 		// int[] arr = { -1, 1, 1 }; int sum = 1;
 
-		 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 }; int sum = 23;
+		 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23, 10, 11, 2 }; int sum = 23;
 
 	//	 int arr[] = {12, 2, -2, -20, 10}; int sum = -12;
 

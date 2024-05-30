@@ -2,6 +2,7 @@ package code.bind.array.hard;
 
 import java.util.Arrays;
 
+//https://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/
 public class NextPlaindrome {
 
 	static void generateNextPalindromeUtil(int num[], int n) {
@@ -97,11 +98,11 @@ public class NextPlaindrome {
 
 	public static void main(String[] args) {
 		// int num[] = { 9, 4, 1, 8, 7, 9, 7, 8, 3, 2, 2 };
-		// int num[] = {9,7,5,3,1};
+	//	 int num[] = {9,7,5,3,1};
 		// int num[] = {2,3,5,4,5};
 		// int num[] = {5,3,5,4,5};
 		// int num[] = {1,3,9,3,7};
-       //  int num[] = {1,3,3,7};
+    //     int num[] = {1,3,3,7};
         // int num[] = {8,9,9,9};
 		// int num[] = { 8, 9, 9, 9, 9 };
 		 int num[] = {8,9,9,9,8};

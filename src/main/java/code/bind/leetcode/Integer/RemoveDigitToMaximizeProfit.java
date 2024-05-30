@@ -5,6 +5,7 @@ public class RemoveDigitToMaximizeProfit {
 
 	public static void main(String[] args) {
 		String[] stringArrayWithPositiveNumber = new String[] { "79867429", "7543798", "72737475" };
+		
 		for (String str : stringArrayWithPositiveNumber) {
 			System.out.println("Positive Number : " + str + " : " + removeDigit(str, '7'));
 		}
@@ -22,7 +23,7 @@ public class RemoveDigitToMaximizeProfit {
 			i = 1;
 			for (; i < number.length(); i++) {
 				if (number.charAt(i - 1) == digit) {
-					if (number.charAt(i) > number.charAt(i - 1)) {
+					if (number.charAt(i - 1) < number.charAt(i)) {
 						return (number.substring(0, i - 1) + number.substring(i));
 					}
 				}

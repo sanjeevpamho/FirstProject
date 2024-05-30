@@ -2,6 +2,7 @@ package code.bind.array.medium;
 
 import java.util.HashMap;
 
+//https://www.youtube.com/watch?v=UXDSeD9mN-k
 public class TwoSum {
 	public static int[] twoSum(int n, int[] arr, int target) {
 		int[] ans = new int[2];

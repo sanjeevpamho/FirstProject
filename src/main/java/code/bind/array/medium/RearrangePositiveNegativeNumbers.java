@@ -33,6 +33,7 @@ public class RearrangePositiveNegativeNumbers {
 			arr[pos] = temp;
 			pos++;
 			neg += 2;
+			System.out.println("::::::" + Arrays.toString(arr));
 		}
 
 		System.out.println("after::::::" + Arrays.toString(arr));

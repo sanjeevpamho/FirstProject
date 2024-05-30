@@ -3,6 +3,7 @@ package code.bind.array.medium;
 import java.util.HashMap;
 import java.util.Map;
 
+//https://www.youtube.com/watch?v=xvNwoz-ufXA&t=1235s
 public class CountSubarraySumEqualsK {
 	public static void main(String[] args) {
 		// int[] arr = { 1, 2, 3, -3, 1, 1, 1, 4, 2, -3 };int k = 3;

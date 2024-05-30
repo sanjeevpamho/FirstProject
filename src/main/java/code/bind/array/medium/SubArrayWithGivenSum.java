@@ -72,17 +72,18 @@ public class SubArrayWithGivenSum {
     public static void main(String[] args)
     {
     	SubArrayWithGivenSum arraysum = new SubArrayWithGivenSum();
-/*
-        int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
+
+   //     int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
+        int arr[] = { 23,15, 2, 4, 8, 9, 5, 10 };
         int n = arr.length;
         int sum = 23;
-*/
+
     	
-    	
+    	/*
     	int arr[] = {12, 2, -2, -20, 10}; 
 		int n = arr.length; 
 		int sum=-12;
-       
+       */
     	
     	/*
     	int arr[] = {24, 2, 10, 8, 5}; 
