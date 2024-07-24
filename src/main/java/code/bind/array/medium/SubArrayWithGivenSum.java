@@ -3,7 +3,7 @@ package code.bind.array.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-//better solution in SubArrayWithGivenSumUsingHashMap program
+//better solution in LongestSubArrayWithGivenSumUsingHashMap program
 public class SubArrayWithGivenSum {
 	
     int subArrayWithSum(int arr[], int n, int sum)
@@ -24,8 +24,7 @@ public class SubArrayWithGivenSum {
             if (currentSum == sum) {
                 int p = i - 1;
                 System.out.println(
-                    "Sum found between indexes " + start
-                    + " and " + p);
+                    "Sum found between indexes " + start + " and " + p);
                 return 1;
             }
             // Add this element to curr_sum

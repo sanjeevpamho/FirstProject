@@ -1,0 +1,46 @@
+1.>
+        String str = "abc";
+		str.concat("xyz");
+		System.out.println(str);
+		//output is : abcxyz
+---------------------------------------------------------		
+2.>     
+class SuperClass {
+	public void method(int i) {
+		System.out.println("Super class method");
+	}
+}
+
+class SubClass extends SuperClass {
+	public void method(Integer i) {
+		System.out.println("Sub class method");
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+	  SuperClass superClass = new SubClass();
+	  superClass.method(10);
+	  Integer num = new Integer(10);
+	  superClass.method(num);
+	}
+}
+
+//output: 
+Super class method
+Super class method		
+------------------------------------------------------------
+3.>
+	public static void main(String[] args) {
+		try {
+			System.out.println("try block");
+			return;
+		} finally {
+			System.out.println("finally block");
+		}
+	}
+	
+//output :
+try block
+finally block	
+======================================================

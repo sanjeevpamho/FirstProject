@@ -1,4 +1,4 @@
-package com.abstractFactoryPattern;
+package com.designPattern.Creational.abstractFactoryPattern;
 
 
 public interface  ComputerAbstractFactory {

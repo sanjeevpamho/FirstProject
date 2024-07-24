@@ -1,12 +1,13 @@
-package com.abstractFactoryPattern;
+package com.designPattern.Creational.abstractFactoryPattern;
 
 
-public class PC extends Computer{
+public class Server extends Computer{
+	
 	public String hdd;
 	public String cpu;
 	public String ram;
 
-	public PC(String hdd,String cpu,String ram){
+	public Server(String hdd,String cpu,String ram){
      this.ram=ram;
      this.cpu=cpu;
      this.hdd=hdd;
@@ -21,5 +22,4 @@ public class PC extends Computer{
 	public  String getCPU(){
 		return cpu;
 	};
-
 }

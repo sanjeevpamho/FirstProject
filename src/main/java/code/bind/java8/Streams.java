@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Streams {
@@ -31,15 +33,41 @@ public class Streams {
 		List<Integer> l3 = allP.stream().flatMap(myList -> myList.stream().map(num -> num * 2)).collect(Collectors.toList());
 		System.out.println("l3 : " + l3);
 		
+		System.out.println("*************************************************************************");
+		
 		//print the elements of stream in reverse order 
 		List<Integer> listToPrint = Arrays.asList(2, 4, 6, 8, 10); 
+		System.out.println("Array sorted in reverse");
 		listToPrint.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println); 
+		List<Integer> reverseSortedArray = listToPrint.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		System.out.println("reverseSortedArray : " + reverseSortedArray);
+		System.out.println("*************************************************************************");
 		
 		//remove duplicated
+		System.out.println("1st approach to remove duplicated elements");
 		List<Integer> listwithDup	= Arrays.asList(1,2,3,2,1,3,4,5);
-		listwithDup.stream().collect(Collectors.groupingBy(s->s))
-		.forEach((k,v)-> {if(v.size()==1) System.out.println(k+" "+v.size()) ;});
+		listwithDup.stream()
+		.collect(Collectors.groupingBy(s->s))
+		.forEach(
+				(k,v)-> {
+					if(v.size()==1) System.out.println(k+" "+v.size()) ;
+					}
+				);
 		
+		System.out.println("*************************************************************************");
+		System.out.println("2nd approach to remove duplicated elements");
+		List<Integer> listwithDupNumber = Arrays.asList(1, 2, 3, 6, 2, 1, 3, 4, 5);
+		
+		Map<Integer, Long> mapWithNumberFrequency = 
+				 listwithDupNumber.stream()
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		List<Integer> listAfterRemoveRuplicateNumbers = 
+				 mapWithNumberFrequency.entrySet().stream()
+				.filter(entry -> entry.getValue() == 1L)
+				.map(entry -> entry.getKey())
+				.collect(Collectors.toList());
+		System.out.println("listAfterRemoveRuplicateNumbers :  " + listAfterRemoveRuplicateNumbers);
 	}
 
 }

@@ -6,17 +6,17 @@ import java.util.Map;
 //https://www.youtube.com/watch?v=xvNwoz-ufXA&t=1235s
 public class CountSubarraySumEqualsK {
 	public static void main(String[] args) {
-		// int[] arr = { 1, 2, 3, -3, 1, 1, 1, 4, 2, -3 };int k = 3;
+		 int[] arr = { 1, 2, 3, -3, 1, 1, 1, 4, 2, -3 };int k = 3;
 		// int[] arr = {3,-3,1,1,1};int k = 3;
 
-		int[] arr = { 3, 1, 2, 4 };
-		int k = 6;
+	//	int[] arr = { 3, 1, 2, 4 }; int k = 6;
+		
 		int cnt = findAllSubarraysWithGivenSum(arr, k);
 		System.out.println("The number of subarrays is: " + cnt);
 
 	}
 
-	public static int findAllSubarraysWithGivenSum(int arr[], int k) {
+	public static int findAllSubarraysWithGivenSum(int arr[], int sum) {
 		int n = arr.length;
 		Map<Integer, Integer> map = new HashMap();
 		map.put(0, 1);
@@ -24,7 +24,7 @@ public class CountSubarraySumEqualsK {
 		int count = 0;
 		for (int i = 0; i < n; i++) {
 			prefixSum += arr[i];
-			int remainingSum = prefixSum - k;
+			int remainingSum = prefixSum - sum;
 
 			if (map.containsKey(remainingSum)) {
 				count = count + map.get(remainingSum);

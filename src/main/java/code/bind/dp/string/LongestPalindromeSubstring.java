@@ -3,8 +3,9 @@ package code.bind.dp.string;
 //https://www.youtube.com/watch?v=fxwvVnBMN6I
 public class LongestPalindromeSubstring {
 	public static void main(String[] args) {
-        System.out.println(longestPalindrome("aabaa"));
-        System.out.println(longestPalindrome("babad"));
+    //    System.out.println(longestPalindrome("aabaa"));
+   //     System.out.println(longestPalindrome("babad"));
+        System.out.println(longestPalindrome("abcddcba"));
 	}
 
 	public static String longestPalindrome(String str) {
@@ -37,7 +38,8 @@ public class LongestPalindromeSubstring {
 					// 2-0+1=3
 					if (j - i + 1 > maxLen) {
 						maxLen = j - i + 1;
-						ans = str.substring(i, j - i + 1);
+					//	System.out.println("i : " + i +" :j : " + j);
+						ans = str.substring(i, i + maxLen);
 					}
 				}
 			}

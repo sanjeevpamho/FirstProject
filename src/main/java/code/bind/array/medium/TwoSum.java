@@ -16,7 +16,6 @@ public class TwoSum {
 				ans[1] = i;
 				return ans;
 			}
-
 			map.put(arr[i], i);
 		}
 		return ans;

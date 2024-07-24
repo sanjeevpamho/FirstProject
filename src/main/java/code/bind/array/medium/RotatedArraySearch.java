@@ -6,12 +6,13 @@ public class RotatedArraySearch {
 		int arr[] = { 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4 };
 		int n = arr.length;
 		int key = 3;
-		System.out.println("Index of the element is : " + pivotedBinarySearch(arr, n, key));
+		for(int i=0 ; i<arr.length;i++)
+		System.out.println("Index of the element is : " + pivotedBinarySearch(arr, n, arr[i]));
 	}
 
 	private static int pivotedBinarySearch(int[] arr, int n, int key) {
 		int pivot = findPivot(arr, 0, n - 1);
-		System.out.println("pivot : " + pivot);
+	//	System.out.println("pivot : " + pivot);
 		if (pivot == -1)
 			binarySearchforSortedArray(arr, key, 0, n - 1);
 

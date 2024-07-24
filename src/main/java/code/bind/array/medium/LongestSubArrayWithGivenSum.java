@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //https://www.youtube.com/watch?v=frf7qxiN2qU&t=1595s
-//from 10 mins onwards
+//from 11 mins onwards
 public class LongestSubArrayWithGivenSum {
 	public static int getLongestSubarray(int[] arr, int sum) {
 		Map<Integer, Integer> preSumMap = new HashMap<>();
@@ -32,6 +32,7 @@ public class LongestSubArrayWithGivenSum {
 			}
 
 			// Finally, update the map checking the conditions:
+			//{2,0,0,3} int k=3 ,if we will update the sum then we will not get longest array
 			if (!preSumMap.containsKey(currentSum)) {
 				preSumMap.put(currentSum, i);
 			}
@@ -43,13 +44,14 @@ public class LongestSubArrayWithGivenSum {
 	public static void main(String[] args) {
 		// int[] arr = { -1, 1, 1 }; int sum = 1;
 
-		 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23, 10, 11, 2 }; int sum = 23;
+	//	 int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23, 10, 11, 2 }; int sum = 23;
 
 	//	 int arr[] = {12, 2, -2, -20, 10}; int sum = -12;
 
 	//	int arr[] = { 1, 2, 3, 1, 1, 1, 1, 3, 3 }; int sum = 3;
 		
-
+	//	int arr[] = {24, 2, 10, 8, 5}; int sum=23;
+		int arr[] = {2,0,0,3}; int sum =3;
 		int len = getLongestSubarray(arr, sum);
 		System.out.println("The length of the longest subarray is: " + len);
 	}

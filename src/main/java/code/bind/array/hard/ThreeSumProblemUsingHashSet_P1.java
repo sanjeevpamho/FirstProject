@@ -8,7 +8,7 @@ import java.util.Set;
 
 //Find Out all Triplets whose sum is Zero 
 //https://www.youtube.com/watch?v=DhFh8Kw7ymk
-public class ThreeSumProblemUsingHashSet {
+public class ThreeSumProblemUsingHashSet_P1 {
 	public static void main(String[] args) {
 	//	int[] arr = { -1, 0, 1, 2, -1, -4 };
 		int[] arr = { -2, -2, -2, -1, -1, -1, 0, 0, 0, 2, 2, 2, 2 };
